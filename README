@@ -19,11 +19,11 @@ After the installation you should be able to use a new liquid tag in your templa
 folder for more info on this. For the impatient:
 
 
-   <ol>
+   <ul>
    {% papers limit: 20 as items %}
      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
    {% endpapers %}
-   </ol>
+   </ul>
 
 Please do make sure to see the documentation for more info on the API.
 
