@@ -1,3 +1,42 @@
 
+= mephisto_papers
+
+Keywords: Ruby on Rails, Mephisto Blog, Plugin, Research Papers, Feed
+
+
+== Description
+
+Mephisto Papers is a plugin for (you guessed it) the Mephisto blog engine [1] based on Ruby on Rails.
+
+
+== Usage
+
+Installation of this plugin follows the normal scheme in the rails world via the script/plugin tool.
+
+    ruby script/plugin install git://github.com/rennhak/mephisto_papers.git
+
+After the installation you should be able to use a new liquid tag in your templates. See the documentation
+folder for more info on this. For the impatient:
+
+
+   <ol>
+   {% papers limit: 20 as items %}
+     <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+   {% endpapers %}
+   </ol>
+
+Please do make sure to see the documentation for more info on the API.
+
+Some standard issues,..
+
+    Make sure the plugin files are readable by your Webserver
+
+
+== References
+
+[1] http://github.com/emk/mephisto/tree/master
+
+
+= License
 
 (C) 2009, Bjoern Rennhak, under an MIT licence. http://www.opensource.org/licenses/mit-license.php
